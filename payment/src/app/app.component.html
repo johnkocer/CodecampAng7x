@@ -1,0 +1,8 @@
+<h4>Payment Process</h4>
+<app-member #uiMember></app-member>
+ <app-product #uiProduct></app-product>
+<app-payment [uiMember]="uiMember.member" [uiProduct]="uiProduct.selectedProduct"></app-payment>
+<br/>
+Copyright 2019 (c) SmartIT. All rights reserved.
+
+<router-outlet></router-outlet>
