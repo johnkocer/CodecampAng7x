@@ -12225,11 +12225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\aJohn19\\Angular7\\EmployeeUiApiCode\\EmployeeWebApi\\EmployeeWebApi.csproj",
+      "projectUniqueName": "E:\\aJohn19\\CodecampAng7x\\EmployeeUiApiCode\\EmployeeWebApi\\EmployeeWebApi.csproj",
       "projectName": "EmployeeWebApi",
-      "projectPath": "e:\\aJohn19\\Angular7\\EmployeeUiApiCode\\EmployeeWebApi\\EmployeeWebApi.csproj",
+      "projectPath": "E:\\aJohn19\\CodecampAng7x\\EmployeeUiApiCode\\EmployeeWebApi\\EmployeeWebApi.csproj",
       "packagesPath": "C:\\Users\\kocerj\\.nuget\\packages\\",
-      "outputPath": "e:\\aJohn19\\Angular7\\EmployeeUiApiCode\\EmployeeWebApi\\obj\\",
+      "outputPath": "E:\\aJohn19\\CodecampAng7x\\EmployeeUiApiCode\\EmployeeWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
