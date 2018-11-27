@@ -47,6 +47,7 @@ namespace EmployeeWebApi.Controllers
             return await _employeeService.AddAsync(item);
         }
 
+        [Route("~/api/UpdateEmployee/{id}")]
         [Route("~/api/UpdateEmployee")]
         [HttpPut]
         public async Task<Employee> UpdateEmployee([FromBody]Employee item)

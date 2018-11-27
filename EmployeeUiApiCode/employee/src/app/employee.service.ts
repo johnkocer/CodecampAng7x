@@ -71,7 +71,7 @@ export class EmployeeService {
   /** PUT: update the employee on the server */
   updateEmployee (employee: Employee): Observable<Employee> {
     return this.http.put<Employee>(
-      this.employeesUrl + "UpdateEmployee", employee, httpOptions  );
+      this.employeesUrl + "UpdateEmployee/" + employee.id, employee, httpOptions  );
   }
 
   /**
