@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { PaymentService } from "../payment.service";
-import { Payment, Product, Member } from "../app.classLibrary";
+import { Member } from "../app.classLibrary";
 @Component({
   selector: "app-member",
   templateUrl: "./member.component.html",
@@ -24,7 +24,9 @@ export class MemberComponent implements OnInit {
     this.paymentService.getMember(id).subscribe(
       data => {
         console.dir(data);
-        if (data != undefined) this.member = data;
+        if (data != undefined) {
+          this.member = data;
+        }
       },
       error => {
         console.log("could not get Member", error);

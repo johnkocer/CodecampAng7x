@@ -41,7 +41,7 @@ export class PaymentComponent implements OnInit {
       return;
     }
     let res = this.makePayment(this.payment);
-    // console.dir(res);
+     console.dir(res);
   }
 
   public OnPaymentTypeChange(item: any) {
@@ -57,8 +57,12 @@ export class PaymentComponent implements OnInit {
       (data: Payment) => {
         this.paymenRes = data;
         this.paymentMessage = data.paymentMessage;
+      console.log("Payment processed: " + this.paymentMessage);
+
       },
-      error => (this.errorMessage = <any>error)
+      error => {this.errorMessage = <any>error
+      console.log("Error in make payment" + this.errorMessage);
+      }
     );
   }
 

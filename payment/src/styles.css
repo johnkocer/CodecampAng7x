@@ -10,6 +10,10 @@ body {
   padding-right: 15px;
 }
 
+.paymentbody {
+  background-color: rgb(216, 235, 187);
+}
+
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
@@ -43,34 +47,40 @@ input[type="checkbox"].input-validation-error {
 }
 
 input.ng-invalid {
-background-color: pink;
+  background-color: pink;
 }
 
 input.ng-valid {
-background-color: lightgreen;
+  background-color: lightgreen;
 }
 
 .memberTH {
-display: inline-block;
-width: 80px;
-font-weight: normal;
+  display: inline-block;
+  width: 80px;
+  font-weight: normal;
 }
+
 .paymentTH {
   font-weight: normal;
 }
 
 
-fieldset {
-  min-width: 0;
-  padding: 0.5em;
-  margin: 0;
-  border: 1px solid #c0c0c0;
+legend {
+  font-size: 0.75rem;
+  width: auto;
+  color: darkgreen;
+  font-weight: bold;
+  padding: 0 0.24rem;
+  margin-bottom: 0;
+  background-clip: rgb(15,195,219)
 }
 
-legend {
-  display: block;
-  width: auto;
-  margin-bottom: 3px;
-  font-size: 12px;
-  border-bottom: 0;
+fieldset {
+  /*margin-inline-start: 2px;
+  margin-inline-end: 2px;*/
+  padding: 0.35rem 0.625rem 0.75rem;
+  background-color: rgb(216, 235, 187);
+  border: 1px solid black;
+  margin-bottom: 0.5rem;
 }
+

@@ -5,7 +5,7 @@ export class Product {
 }
 
 export interface IMember {
-  memberId: string;
+  id: string;
   fullName: string;
   zipCode: string;
   errorMessage: string;
@@ -13,14 +13,14 @@ export interface IMember {
 }
 
 export class Member implements IMember {
-  public memberId: string;
+  public id: string;
   public fullName: string;
   public zipCode: string;
   errorMessage: string;
   isSuccess: boolean;
   constructor() {
-    this.memberId = "100";
-    this.fullName = "jen Smart";
+    this.id = "100";
+    this.fullName = "Jen Smart";
     this.zipCode = "84223";
     this.errorMessage = "OK";
     this.isSuccess = true;
@@ -42,7 +42,7 @@ export class SingleResponse<TModel> implements ISingleResponse<TModel> {
 }
 
 export class Payment {
-  memberId: string;
+  id: string;
   paymentAmount: number;
   paymentDate: Date;
   nameOnCard: string;

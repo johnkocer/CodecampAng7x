@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { PaymentService } from "../payment.service";
-import {Product } from '../app.classLibrary';
+import { Product } from "../app.classLibrary";
 
 @Component({
   selector: "app-product",
@@ -22,12 +22,16 @@ export class ProductComponent implements OnInit {
   }
 
   getProductList(filter: string) {
-    this.paymentService
-      .getProductList(filter)
-      //.do(data => console.dir(data))
+    this.paymentService.getProductList(filter)
+      // .do(data => console.dir(data))
       .subscribe(
-        data => (this.productList = data),
-        error => (this.errorMessage = <any>error)
+        data => {
+          console.dir(data)
+          this.productList = data;
+        },
+        error => {
+          this.errorMessage = <any>error;
+        }
       );
   }
 

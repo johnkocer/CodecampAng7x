@@ -1,18 +1,16 @@
-<fieldset class="fieldset2">
+<fieldset>
   <legend><span style="isMemberSuccess"> Customer Info: </span></legend>
-  <div ng-style="isMemberSuccess">
-    <div>
-      <label class="memberTH">Member ID:</label>
-      <span data-ng-model="MemberId">{{member.memberId}}</span>
+  <div ng-style="isMemberSuccess" class="col col-sm">
+    <div c>
+      <label>Member ID: </label> <span>{{ member.id }}</span>
     </div>
     <div>
-      <label class="memberTH">Name: </label>
-      <span>{{member.fullName}}</span>
+      <label>Name: </label> <span> {{ member.fullName }}</span>
     </div>
     <div>
       <label class="memberTH">Zip Code: </label>
-      <span>{{member.zipCode}}</span>
+      <span>{{ member.zipCode }}</span>
     </div>
   </div>
 </fieldset>
-<!-- {{member | json}} -->
+<!-- {{ member | json }} -->
